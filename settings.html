@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسيقاتي - الاعدادات</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="i18n.js"></script>
+  </head>
+  <body data-page-title="page.title.settings">
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="شعار موسيقاتي" width="115" height="60" /></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="store.html" data-i18n="nav.store">المتجر</a></li>
+        <li><a href="gifts.html" data-i18n="nav.gifts">الهدايا</a></li>
+        <li><a href="offers.html" data-i18n="nav.offers">العروض</a></li>
+        <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <a
+        href="settings.html"
+        class="nav-settings-btn active"
+        aria-label="الاعدادات"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+          />
+        </svg>
+      </a>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <div class="page-header">
+      <div style="font-size: 64px; margin-bottom: 12px; line-height: 1">⚙️</div>
+      <h1 data-i18n="settings.header.title">الاعدادات</h1>
+      <p data-i18n="settings.header.desc">خصص تجربتك على موسيقاتي</p>
+    </div>
+
+    <!-- محتوى الإعدادات -->
+    <section class="section">
+      <div class="container">
+        <div class="settings-grid">
+          <!-- بطاقة اللغة -->
+          <div class="settings-card">
+            <div class="settings-card-header">
+              <div class="settings-card-icon">🌐</div>
+              <h3 data-i18n="settings.lang.title">اللغة</h3>
+            </div>
+            <p class="settings-subtitle" data-i18n="settings.lang.subtitle">
+              اختر لغة عرض الموقع
+            </p>
+
+            <div class="seg-control">
+              <button
+                class="seg-btn"
+                id="btn-lang-ar"
+                onclick="changeLanguage('ar')"
+              >
+                <span data-i18n="settings.lang.ar">العربية</span>
+              </button>
+              <button
+                class="seg-btn"
+                id="btn-lang-en"
+                onclick="changeLanguage('en')"
+              >
+                <span data-i18n="settings.lang.en">English</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- بطاقة المظهر -->
+          <div class="settings-card">
+            <div class="settings-card-header">
+              <div class="settings-card-icon">🎨</div>
+              <h3 data-i18n="settings.theme.title">المظهر</h3>
+            </div>
+            <p class="settings-subtitle" data-i18n="settings.theme.subtitle">
+              اختر وضع العرض المفضل لديك
+            </p>
+
+            <div class="seg-control">
+              <button
+                class="seg-btn"
+                id="btn-theme-light"
+                onclick="changeTheme('light')"
+              >
+                ☀️ <span data-i18n="settings.theme.light">فاتح</span>
+              </button>
+              <button
+                class="seg-btn"
+                id="btn-theme-dark"
+                onclick="changeTheme('dark')"
+              >
+                🌙 <span data-i18n="settings.theme.dark">داكن</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()" title="العودة للأعلى">
+      ↑
+    </button>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+    <script>
+      // تحديث واجهة الإعدادات عند تحميل الصفحة
+      document.addEventListener("DOMContentLoaded", function () {
+        updateSettingsUI();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسيقاتي - الهدايا والإكسسوارات</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="i18n.js"></script>
+  </head>
+  <body data-page-title="page.title.gifts">
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="شعار موسيقاتي" width="115" height="60" /></div>
+      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="store.html" data-i18n="nav.store">المتجر</a></li>
+        <li><a href="gifts.html" class="active" data-i18n="nav.gifts">الهدايا</a></li>
+        <li><a href="offers.html" data-i18n="nav.offers">العروض</a></li>
+        <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <a href="settings.html" class="nav-settings-btn" aria-label="الإعدادات">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </a>
+    </nav>
+
+    <div class="page-header">
+      <img src="images/gifts.png" alt="الهدايا" />
+      <h1 data-i18n="gifts.header.title">الهدايا والإكسسوارات</h1>
+      <p data-i18n="gifts.header.desc">اعثر على الهدية الموسيقية المثالية لأصدقائك وعائلتك</p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gifts.section1.title">الإكسسوارات الموسيقية</h2>
+        <p class="section-subtitle" data-i18n="gifts.section1.subtitle">كل ما يحتاجه الموسيقي</p>
+        <div class="gifts-grid">
+          <div class="gift-card">
+            <h3 data-i18n="gifts.picks.name">مجموعة ريشات الجيتار</h3>
+            <p data-i18n="gifts.picks.desc">علبة تحتوي على 20 ريشة بسماكات مختلفة مناسبة لأي عازف جيتار</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.picks.price">3 دينار</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.stand.name">حامل النوتة الموسيقية</h3>
+            <p data-i18n="gifts.stand.desc">حامل نوتة معدني قابل للطي والتعديل سهل التخزين والنقل</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.stand.price">12 دينار</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.headphones.name">سماعات استوديو</h3>
+            <p data-i18n="gifts.headphones.desc">سماعات احترافية فوق الأذن مناسبة للتدريب والاستماع</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.headphones.price">35 دينار</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.notebook.name">كراسة النوتة الموسيقية</h3>
+            <p data-i18n="gifts.notebook.desc">دفتر ورق موسيقي فارغ بـ 100 صفحة بجودة احترافية</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.notebook.price">4 دينار</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.book.name">كتاب دروس البيانو</h3>
+            <p data-i18n="gifts.book.desc">كتاب دروس بيانو للمبتدئين يحتوي على تمارين وأغاني</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.book.price">8 دينار</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.cleankit.name">طقم تنظيف الالات</h3>
+            <p data-i18n="gifts.cleankit.desc">طقم كامل لتنظيف وصيانة الالات الموسيقية يشمل القماش والتلميع</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.cleankit.price">10 دينار</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: var(--white)">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gifts.section2.title">خدمة تغليف الهدايا</h2>
+        <p class="section-subtitle" data-i18n="gifts.section2.subtitle">نقوم بتغليف هداياك مجانا</p>
+        <div class="gifts-grid">
+          <div class="gift-card">
+            <h3 data-i18n="gifts.wrap1.name">علبة الهدية العادية</h3>
+            <p data-i18n="gifts.wrap1.desc">علبة هدية مغلفة بشكل جميل مع شريط متوفرة بألوان متعددة</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.wrap1.price">مجاناً</span>
+          </div>
+          <div class="gift-card">
+            <h3 data-i18n="gifts.wrap2.name">باقة الهدية المميزة</h3>
+            <p data-i18n="gifts.wrap2.desc">تغليف هدية فاخر مع بطاقة رسالة شخصية مثالي للمناسبات الخاصة</p>
+            <span style="color: var(--gold); font-weight: bold" data-i18n="gifts.wrap2.price">2 دينار</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="gifts.section3.title">كوبونات الهدايا</h2>
+        <p class="section-subtitle" data-i18n="gifts.section3.subtitle">أهد الموسيقى</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div class="coupon-box">
+            <p data-i18n="gifts.coupon1.label">كوبون هدية - 10 دينار</p>
+            <div class="coupon-code">MUSIC10</div>
+            <p data-i18n="gifts.coupon1.note">استخدم هذا الكود عند الدفع صالح لمدة 6 أشهر</p>
+          </div>
+          <div class="coupon-box">
+            <p data-i18n="gifts.coupon2.label">كوبون هدية - 20 دينار</p>
+            <div class="coupon-code">MUSIC20</div>
+            <p data-i18n="gifts.coupon2.note">استخدم هذا الكود عند الدفع صالح لمدة 6 أشهر</p>
+          </div>
+          <div class="coupon-box">
+            <p data-i18n="gifts.coupon3.label">كوبون هدية - 50 دينار</p>
+            <div class="coupon-code">MUSIC50</div>
+            <p data-i18n="gifts.coupon3.note">استخدم هذا الكود عند الدفع صالح لمدة 6 أشهر</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()" title="العودة للأعلى">↑</button>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

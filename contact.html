@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسيقاتي - تواصل معنا</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="i18n.js"></script>
+  </head>
+  <body data-page-title="page.title.contact">
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="شعار موسيقاتي" width="115" height="60" /></div>
+      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="store.html" data-i18n="nav.store">المتجر</a></li>
+        <li><a href="gifts.html" data-i18n="nav.gifts">الهدايا</a></li>
+        <li><a href="offers.html" data-i18n="nav.offers">العروض</a></li>
+        <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <a href="settings.html" class="nav-settings-btn" aria-label="الإعدادات">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </a>
+    </nav>
+
+    <div class="page-header">
+      <img src="images/Contact with us.png" alt="تواصل معنا" />
+      <h1 data-i18n="contact.header.title">تواصل معنا</h1>
+      <p data-i18n="contact.header.desc">يسعدنا سماع رأيك أرسل لنا رسالة</p>
+    </div>
+
+    <div class="contact-layout">
+      <div>
+        <div class="contact-form">
+          <h2 data-i18n="contact.form.title">أرسل لنا رسالة</h2>
+          <div id="success-msg" data-i18n="contact.form.success">تم إرسال رسالتك بنجاح سنتواصل معك قريبا</div>
+
+          <div class="form-group">
+            <label for="name" data-i18n="contact.form.name.label">اسمك الكامل *</label>
+            <input type="text" id="name" data-i18n="contact.form.name.placeholder" data-i18n-attr="placeholder" placeholder="أدخل اسمك الكامل" />
+            <p class="error-msg" id="name-error" data-i18n="contact.form.name.error">يرجى إدخال اسمك</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="contact.form.email.label">البريد الإلكتروني *</label>
+            <input type="email" id="email" placeholder="example@email.com" />
+            <p class="error-msg" id="email-error" data-i18n="contact.form.email.error">يرجى إدخال بريد إلكتروني صحيح</p>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" data-i18n="contact.form.subject.label">الموضوع</label>
+            <input type="text" id="subject" data-i18n="contact.form.subject.placeholder" data-i18n-attr="placeholder" placeholder="عن ماذا تريد التواصل؟" />
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message.label">الرسالة *</label>
+            <textarea id="message" data-i18n="contact.form.message.placeholder" data-i18n-attr="placeholder" placeholder="اكتب رسالتك هنا..."></textarea>
+            <p class="error-msg" id="message-error" data-i18n="contact.form.message.error">يرجى كتابة رسالة قبل الإرسال</p>
+          </div>
+
+          <button class="btn-gold" onclick="sendMessage()" style="width: 100%; padding: 12px" data-i18n="contact.form.submit">إرسال الرسالة</button>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <h2 data-i18n="contact.info.title">معلومات التواصل</h2>
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div>
+            <h4 data-i18n="contact.info.address.title">العنوان</h4>
+            <p data-i18n="contact.info.address.value">عمان الأردن - العبدلي</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📞</div>
+          <div>
+            <h4 data-i18n="contact.info.phone.title">الهاتف</h4>
+            <p data-i18n="contact.info.phone.value">+962 7 9999 79</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📧</div>
+          <div>
+            <h4 data-i18n="contact.info.email.title">البريد الإلكتروني</h4>
+            <p data-i18n="contact.info.email.value">mosiqati@gmail.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">🕐</div>
+          <div>
+            <h4 data-i18n="contact.info.hours.title">ساعات العمل</h4>
+            <p data-i18n="contact.info.hours.sat">السبت - الخميس: من 10 صباحا حتى 8 مساء</p>
+            <p data-i18n="contact.info.hours.fri">الجمعة: من 2 ظهرا حتى 8 مساء</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="back-to-top" onclick="scrollToTop()" title="العودة للأعلى">↑</button>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

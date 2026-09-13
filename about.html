@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسيقاتي - من نحن</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="i18n.js"></script>
+  </head>
+  <body data-page-title="page.title.about">
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="شعار موسيقاتي" width="115" height="60" /></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="store.html" data-i18n="nav.store">المتجر</a></li>
+        <li><a href="gifts.html" data-i18n="nav.gifts">الهدايا</a></li>
+        <li><a href="offers.html" data-i18n="nav.offers">العروض</a></li>
+        <li>
+          <a href="about.html" class="active" data-i18n="nav.about">من نحن</a>
+        </li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <a href="settings.html" class="nav-settings-btn" aria-label="الإعدادات">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+          />
+        </svg>
+      </a>
+    </nav>
+
+    <div class="page-header">
+      <img src="images/About us.png" alt="من نحن" />
+      <h1 data-i18n="about.header.title">من نحن</h1>
+      <p data-i18n="about.header.desc">
+        تعرف على موسيقاتي والأشخاص الذين يقفون خلف المتجر
+      </p>
+    </div>
+
+    <section class="about-intro">
+      <div>
+        <h2 data-i18n="about.section.title">من نحن؟</h2>
+        <p data-i18n="about.p1">
+          موسيقاتي هو متجر أردني للالات الموسيقية يقع في عمان بالأردن تأسس بهدف
+          بسيط وهو جعل الالات الموسيقية عالية الجودة متاحة وبأسعار معقولة للجميع
+          في الأردن
+        </p>
+        <p data-i18n="about.p2">
+          سواء كنت تبدأ رحلتك الموسيقية لأول مرة أو كنت موسيقيا محترفا لدينا
+          الالات والإكسسوارات المناسبة لك فريقنا شغوف بالموسيقى ومستعد دائما
+          لمساعدتك في إيجاد الالة المثالية
+        </p>
+        <p data-i18n="about.p3">
+          نحمل مجموعة واسعة من الالات تشمل العود والجيتار والبيانو والطبول
+          ومعدات الاستوديو كما نقدم خدمة تغليف الهدايا والتوصيل في جميع أنحاء
+          الأردن ودعما بعد البيع
+        </p>
+        <a href="contact.html" class="btn-gold" data-i18n="about.btn"
+          >تواصل معنا</a
+        >
+      </div>
+      <div>
+        <img src="images/About us.png" alt="عن موسيقاتي" />
+      </div>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()" title="العودة للأعلى">
+      ↑
+    </button>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

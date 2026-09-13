@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسيقاتي - المتجر</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="i18n.js"></script>
+  </head>
+  <body data-page-title="page.title.store">
+    <nav>
+      <div class="logo"><img src="images/logo.png" alt="شعار موسيقاتي" width="115" height="60" /></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+        <li>
+          <a href="store.html" class="active" data-i18n="nav.store">المتجر</a>
+        </li>
+        <li><a href="gifts.html" data-i18n="nav.gifts">الهدايا</a></li>
+        <li><a href="offers.html" data-i18n="nav.offers">العروض</a></li>
+        <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <a href="settings.html" class="nav-settings-btn" aria-label="الإعدادات">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+          />
+        </svg>
+      </a>
+    </nav>
+
+    <div class="page-header">
+      <img src="images/store.png" alt="المتجر" />
+      <h1 data-i18n="store.header.title">متجرنا</h1>
+      <p data-i18n="store.header.desc">
+        تصفح مجموعتنا الواسعة من الالات الموسيقية والمعدات
+      </p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="store.section.title">
+          الاتنا الموسيقية
+        </h2>
+        <p class="section-subtitle" data-i18n="store.section.subtitle">
+          الات عالية الجودة لجميع المستويات
+        </p>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/oud-7-angle5-400x600.webp"
+              alt="عود عربي"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.oud.name">عود عربي</h3>
+              <p data-i18n="product.oud.desc">
+                عود عربي مصنوع يدويا بصوت رائع وخشب عالي الجودة
+              </p>
+              <span class="price" data-i18n="product.oud.price">85 دينار</span>
+              <button
+                class="btn-add"
+                onclick="addToCart('oud')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/OW-AUSTEN-S-AN-RETRO-L-FRONT-FULL-PG_960x.webp"
+              alt="جيتار أكوستيك"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.acoustic.name">جيتار أكوستيك</h3>
+              <p data-i18n="product.acoustic.desc">
+                مناسب للمبتدئين والمستوى المتوسط ويأتي مع حقيبة
+              </p>
+              <span class="price" data-i18n="product.acoustic.price"
+                >65 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('acoustic')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/LYXEGST39B-Strat-Guitar-Black-Product-Image-2.webp"
+              alt="جيتار كهربائي"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.electric.name">جيتار كهربائي</h3>
+              <p data-i18n="product.electric.desc">
+                جيتار كهربائي بطراز روك مع مجموعة كاملة من الإكسسوارات
+              </p>
+              <span class="price" data-i18n="product.electric.price"
+                >120 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('electric')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/CX202B_styling_bench.webp"
+              alt="بيانو رقمي"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.piano.name">بيانو رقمي</h3>
+              <p data-i18n="product.piano.desc">
+                بيانو رقمي بـ 88 مفتاحا موزونا وجودة صوت رائعة
+              </p>
+              <span class="price" data-i18n="product.piano.price"
+                >250 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('piano')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img class="product-img" src="images/Drum Kit.jpg" alt="طقم طبول" />
+            <div class="card-info">
+              <h3 data-i18n="product.drums.name">طقم طبول</h3>
+              <p data-i18n="product.drums.desc">
+                طقم طبول احترافي كامل جاهز للعزف فور الاستلام
+              </p>
+              <span class="price" data-i18n="product.drums.price"
+                >300 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('drums')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/Studio Microphone.png"
+              alt="ميكروفون استوديو"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.mic.name">ميكروفون استوديو</h3>
+              <p data-i18n="product.mic.desc">
+                ميكروفون احترافي للتسجيل في الاستوديو
+              </p>
+              <span class="price" data-i18n="product.mic.price">75 دينار</span>
+              <button
+                class="btn-add"
+                onclick="addToCart('mic')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-img"
+              src="images/Audio Interface.png"
+              alt="واجهة صوتية"
+            />
+            <div class="card-info">
+              <h3 data-i18n="product.audio.name">واجهة صوتية</h3>
+              <p data-i18n="product.audio.desc">
+                وصّل الاتك بالكمبيوتر بسهولة وتعمل بمنفذ USB
+              </p>
+              <span class="price" data-i18n="product.audio.price"
+                >55 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('audio')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img class="product-img" src="images/Violin.webp" alt="كمان" />
+            <div class="card-info">
+              <h3 data-i18n="product.violin.name">كمان</h3>
+              <p data-i18n="product.violin.desc">
+                كمان خشبي كلاسيكي مثالي للطلاب والمبتدئين
+              </p>
+              <span class="price" data-i18n="product.violin.price"
+                >90 دينار</span
+              >
+              <button
+                class="btn-add"
+                onclick="addToCart('violin')"
+                data-i18n="store.btn.addcart"
+              >
+                أضف إلى السلة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="store.video.title">
+          فيديو تعريفي
+        </h2>
+        <p class="section-subtitle" data-i18n="store.video.subtitle">
+          فيديو ترويجي لمنتجات المتجر
+        </p>
+        <div class="video-card">
+          <video controls width="100%" style="display: block">
+            <source src="videos/Website video.mp4" type="video/mp4" />
+            <span data-i18n="store.video.unsupported"
+              >متصفحك لا يدعم تشغيل الفيديو</span
+            >
+          </video>
+          <div class="video-info">
+            <h3 data-i18n="store.video.card.title">ترويج لبعض من المنتجات</h3>
+            <p data-i18n="store.video.card.desc">
+              تعرف على أبرز الالات الموسيقية والخدمات المتوفرة لدينا
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()" title="العودة للأعلى">
+      ↑
+    </button>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
